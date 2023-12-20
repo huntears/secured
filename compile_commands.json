@@ -1,0 +1,87 @@
+[
+  {
+    "arguments": [
+      "/usr/lib/llvm/16/bin/clang",
+      "-I./src",
+      "-I./src/hashmap",
+      "-Weverything",
+      "-Wno-unsafe-buffer-usage",
+      "-std=gnu2x",
+      "-c",
+      "-o",
+      "build/./src/main.c.o",
+      "src/main.c"
+    ],
+    "directory": "/home/huntears/programs/aer/secured",
+    "file": "/home/huntears/programs/aer/secured/src/main.c",
+    "output": "/home/huntears/programs/aer/secured/build/src/main.c.o"
+  },
+  {
+    "arguments": [
+      "/usr/lib/llvm/16/bin/clang",
+      "-I./src",
+      "-I./src/hashmap",
+      "-Weverything",
+      "-Wno-unsafe-buffer-usage",
+      "-std=gnu2x",
+      "-c",
+      "-o",
+      "build/./src/hashing_functions.c.o",
+      "src/hashing_functions.c"
+    ],
+    "directory": "/home/huntears/programs/aer/secured",
+    "file": "/home/huntears/programs/aer/secured/src/hashing_functions.c",
+    "output": "/home/huntears/programs/aer/secured/build/src/hashing_functions.c.o"
+  },
+  {
+    "arguments": [
+      "/usr/lib/llvm/16/bin/clang",
+      "-I./src",
+      "-I./src/hashmap",
+      "-Weverything",
+      "-Wno-unsafe-buffer-usage",
+      "-std=gnu2x",
+      "-c",
+      "-o",
+      "build/./src/hashmap/new_hashmap.c.o",
+      "src/hashmap/new_hashmap.c"
+    ],
+    "directory": "/home/huntears/programs/aer/secured",
+    "file": "/home/huntears/programs/aer/secured/src/hashmap/new_hashmap.c",
+    "output": "/home/huntears/programs/aer/secured/build/src/hashmap/new_hashmap.c.o"
+  },
+  {
+    "arguments": [
+      "/usr/lib/llvm/16/bin/clang",
+      "-I./src",
+      "-I./src/hashmap",
+      "-Weverything",
+      "-Wno-unsafe-buffer-usage",
+      "-std=gnu2x",
+      "-c",
+      "-o",
+      "build/./src/hashmap/delete_hashmap.c.o",
+      "src/hashmap/delete_hashmap.c"
+    ],
+    "directory": "/home/huntears/programs/aer/secured",
+    "file": "/home/huntears/programs/aer/secured/src/hashmap/delete_hashmap.c",
+    "output": "/home/huntears/programs/aer/secured/build/src/hashmap/delete_hashmap.c.o"
+  },
+  {
+    "arguments": [
+      "/usr/lib/llvm/16/bin/clang",
+      "-I./src",
+      "-I./src/hashmap",
+      "-Weverything",
+      "-Wno-unsafe-buffer-usage",
+      "-std=gnu2x",
+      "-c",
+      "-o",
+      "build/./src/hashmap/hm_insert.c.o",
+      "src/hashmap/hm_insert.c"
+    ],
+    "directory": "/home/huntears/programs/aer/secured",
+    "file": "/home/huntears/programs/aer/secured/src/hashmap/hm_insert.c",
+    "output": "/home/huntears/programs/aer/secured/build/src/hashmap/hm_insert.c.o"
+  }
+]

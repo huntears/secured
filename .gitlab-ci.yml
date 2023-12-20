@@ -1,0 +1,11 @@
+image: registry.gitlab.com/huntears/light-epitest/master:latest
+
+build-job:
+  stage: build
+  script:
+    - make
+  artifacts:
+    when: on_success
+    paths:
+      - my_hunter
+    expire_in: 1 day
