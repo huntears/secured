@@ -5,19 +5,15 @@
 ** main
 */
 
+#ifndef UNIT_TESTS
+
 #include <stdio.h>
 
 #include "hashing_functions.h"
 #include "hashmap/hashmap.h"
 #include "utility.h"
 
-#ifdef UNIT_TESTS
-#define MAIN not_main
-#else
-#define MAIN main
-#endif
-
-int MAIN(void)
+int main(void)
 {
     hashmap_t *h = new_hashmap(sdbm, 10);
 
@@ -44,3 +40,5 @@ int MAIN(void)
     delete_hashmap(h);
     return 0;
 }
+
+#endif
