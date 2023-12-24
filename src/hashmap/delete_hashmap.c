@@ -10,9 +10,23 @@
 #include "hashmap.h"
 #include "utility.h"
 
-static void delete_bucket(UNUSED bucket_t *bck)
+static void delete_bucket_node(bucket_node_t *bck_node)
 {
-    // TODO (huntears): Actually delete the buckets
+    free(bck_node->data);
+    free(bck_node->key);
+}
+
+static void delete_bucket(bucket_t *bck)
+{
+    bucket_node_t *current_node = bck->nodes;
+    bucket_node_t *next_node = NULL;
+
+    while (current_node) {
+        next_node = current_node->next;
+        delete_bucket_node(current_node);
+        free(current_node);
+        current_node = next_node;
+    }
 }
 
 void delete_hashmap(hashmap_t *hm)
