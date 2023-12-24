@@ -8,8 +8,9 @@
 #include <stdlib.h>
 
 #include "hashmap.h"
+#include "utility.h"
 
-static void delete_bucket(bucket_t *bck)
+static void delete_bucket(UNUSED bucket_t *bck)
 {
     // TODO (huntears): Actually delete the buckets
 }
