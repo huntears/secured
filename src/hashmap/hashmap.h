@@ -32,7 +32,7 @@ hashmap_t *new_hashmap(
     uint64_t (*hash_function)(const char *, uint32_t), uint32_t num_buckets
 );
 void delete_hashmap(hashmap_t *hm);
-void hm_insert(hashmap_t *hm, const char *key, const char *value);
+int hm_insert(hashmap_t *hm, const char *key, const char *value);
 void hm_dump(const hashmap_t *hm);
 char *hm_search(const hashmap_t *hm, const char *key);
 
