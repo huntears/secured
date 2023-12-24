@@ -1,3 +1,10 @@
+/*
+** EPITECH PROJECT, 2023
+** secured
+** File description:
+** hashmap
+*/
+
 #ifndef BE5162AD_085E_47B8_B89B_522E2E979393
 #define BE5162AD_085E_47B8_B89B_522E2E979393
 

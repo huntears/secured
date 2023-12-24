@@ -1,3 +1,10 @@
+/*
+** EPITECH PROJECT, 2023
+** secured
+** File description:
+** new_hashmap
+*/
+
 #include <stdlib.h>
 #include <string.h>
 
