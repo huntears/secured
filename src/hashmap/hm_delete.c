@@ -28,6 +28,7 @@ delete_from_bucket(bucket_t *bck, const char *key, uint64_t hashed_key)
             free(n);
             return 0;
         }
+        prev = n;
     }
     return 1;
 }
