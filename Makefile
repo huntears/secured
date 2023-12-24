@@ -16,7 +16,7 @@ INC_FLAGS := $(addprefix -I,$(INC_DIRS))
 
 CPPFLAGS := $(INC_FLAGS) -MMD -MP
 
-CFLAGS	:=	-Weverything -Wno-unsafe-buffer-usage -Wno-padded -std=gnu2x
+CFLAGS	:=	-Weverything -Wno-unsafe-buffer-usage -Wno-padded -Werror -O2 -std=gnu2x
 
 LDFLAGS	:=
 
