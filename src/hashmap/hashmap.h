@@ -33,5 +33,6 @@ hashmap_t *new_hashmap(
 );
 void delete_hashmap(hashmap_t *hm);
 void hm_insert(hashmap_t *hm, const char *key, const char *value);
+void hm_dump(const hashmap_t *hm);
 
 #endif /* BE5162AD_085E_47B8_B89B_522E2E979393 */
