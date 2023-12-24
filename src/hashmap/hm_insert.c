@@ -10,6 +10,7 @@
 
 #include "hashmap.h"
 
+// TODO (huntears): Handle data overwrites
 void hm_insert(hashmap_t *hm, const char *key, const char *value)
 {
     uint64_t hashed_key = hm->hash_function(key, (uint32_t) strlen(key));
