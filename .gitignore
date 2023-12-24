@@ -59,3 +59,4 @@ reports/
 build
 secured
 .cache
+compile_commands.json
