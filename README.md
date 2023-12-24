@@ -11,6 +11,8 @@ This implementation:
  - Does not compile a static library. Why? Because I couldn't be bothered
  - Uses libc function. Why? Because I couldn't be bothered to reimplement them
  - Can comment inside functions. Why? Because
+ - Some functions prototypes contain const where there wasn't. Why? Because I
+ like to respect const correctness
 
 This should still be enough of a reference to the project either way.
 
