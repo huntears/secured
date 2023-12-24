@@ -21,6 +21,6 @@ hashmap_t *new_hashmap(
         return NULL;
     map->hash_function = hash_function;
     map->num_buckets = num_buckets;
-    memset(map->buckets, 0, num_buckets);
+    memset(map->buckets, 0, sizeof(bucket_t) * num_buckets);
     return map;
 }
