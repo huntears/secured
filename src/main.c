@@ -11,9 +11,16 @@
 #include "hashmap/hashmap.h"
 #include "utility.h"
 
-int main(void)
+#ifdef UNIT_TESTS
+#define MAIN not_main
+#else
+#define MAIN main
+#endif
+
+int MAIN(void)
 {
     hashmap_t *h = new_hashmap(sdbm, 10);
+
     hm_insert(h, "bruh", "hurb");
     hm_insert(h, "yes", "no");
     hm_insert(h, "yeah", "nop");
