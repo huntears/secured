@@ -18,6 +18,8 @@ int main(void)
     hm_insert(h, "yes", "no");
     hm_insert(h, "yeah", "nop");
     hm_dump(h);
+    printf("Searching for yes: %s\n", hm_search(h, "yes"));
+    printf("Searching for no: %s\n", hm_search(h, "no"));
     delete_hashmap(h);
     return 0;
 }
