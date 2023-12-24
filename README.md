@@ -13,3 +13,11 @@ This implementation:
  - Can comment inside functions. Why? Because
 
 This should still be enough of a reference to the project either way.
+
+## Hashing function
+
+The chosen hashing function is sdbm as it has very few collisions and overall
+good randomization, which is everything that could be asked for a hashmap's
+hashing function.
+
+Read more [here on this SO answer](https://softwareengineering.stackexchange.com/questions/49550/which-hashing-algorithm-is-best-for-uniqueness-and-speed/145633#145633)
